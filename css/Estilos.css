@@ -3,17 +3,17 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    width: 100%;
     margin: 0;
     padding: 0;
 }
 
 .logo {
-    width:300px;
+    width:auto;
     height:150px;
 }
 .barra{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 25px;
     border: 2px solid rgb(255, 69, 0);
     border-radius: 50px;
@@ -58,6 +58,7 @@ body {
 }
 
 .menu {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,7 +95,7 @@ nav {
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: rgb(171, 227, 235,20%);
     backdrop-filter: blur(20px);
@@ -102,22 +103,29 @@ nav {
 }
 
 .carrusel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
     display: flex;
     justify-content: space-around;
+    margin-top: 180px;
+}
+
+.carrusel-container div {
+    min-width: 100%;
+    padding: 10px;
 }
 
 .carrusel-container div img {
-    width: 700px;
-    height: 400px;
-    padding: 10px;
-    margin-top: 180px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
 }
 
 .boton-carrusel {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -201,6 +209,7 @@ nav {
 .container-masvendidos {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 50px;
 }
 
 .tarjetas-publicados {
@@ -255,7 +264,7 @@ nav {
 .footer {
     width: 100%;
     background-color: rgb(24, 24, 105);
-    margin-top: 100px;
+    width: 100%;
 }
 
 .footer-container {
@@ -310,9 +319,7 @@ nav {
 }
 
 .nav-lateral {
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
+    width: 200px;
     top: 200px;
     background-color: rgb(171, 227, 235,20%);
     backdrop-filter: blur(20px);
@@ -320,6 +327,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 15px;
+    margin-left: 20px;
 }
 
 .Categorias h3 {
@@ -371,31 +379,44 @@ nav {
 
 .container-resultados {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .box {
-    width: 80%;
-    margin-left: 150px;
-    margin-top: 200px;
-    display: flex;
-    flex-direction: column;
+    flex: 1;
+    padding-left: 20px;
+    padding-bottom: 50px;
 }
 
 .publicaciones {
+    width: 100%;
+    max-width: 900px;
     background-color: rgb(171, 227, 235,20%);
     backdrop-filter: blur(20px);
-    margin: 20px;
+    margin: 20px 0;
     padding: 20px;
     border-radius: 20px ;
     display: flex;
     justify-content: space-around;
 }
 
+.container-navYPublicaciones {
+    display: flex;
+    gap: 50px;
+}
+
+.principal-resultados {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 180px;
+    padding: 0 20px;
+}
+
 .publicaciones img {
     width: 200px;
-    height: 200px;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -442,24 +463,23 @@ nav {
 }
 
 .publicaciones-container {
-    width: 900px;
-    margin-left: 250px;
-    margin-top: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    width: calc(100% - 300px);
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .blog {
     background-color: rgb(171, 227, 235,20%);
     backdrop-filter: blur(20px);
-    margin: 30px;
+    margin: 30px auto;
     padding: 20px;
     border-radius: 20px;
-    width: 900px;
-    margin-left: 200px;
+    width: 90%;
+    max-width: 900px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .publicaciones-blog {
@@ -470,8 +490,9 @@ padding: 30px;
 }
 
 .blog img{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -496,7 +517,7 @@ padding: 30px;
     margin: 2px;
 }
 
-main {
+.m-blog {
     margin-top: 200px;
     margin-bottom: 200px;
 }
@@ -557,4 +578,8 @@ main {
 .enviosYPreguntas {
     display: flex;
     justify-content: center;
+}
+
+.m-envios {
+    margin-top: 180px;
 }
