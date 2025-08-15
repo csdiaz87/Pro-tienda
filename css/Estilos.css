@@ -1,0 +1,560 @@
+body {
+    background-image: url(../Recursos/Imagenes/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width:300px;
+    height:150px;
+}
+.barra{
+    width: 400px;
+    height: 25px;
+    border: 2px solid rgb(255, 69, 0);
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 207, 179);
+    margin: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra input {
+    margin: none;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(71, 121, 208);
+    border: none;
+    outline: none;
+    width: 340px;
+}
+
+.barra button {
+    margin: none;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(71, 121, 208);
+    border: none;
+}
+
+
+
+.menu a {
+    text-decoration: none;
+    color: rgb(71, 121, 208);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login a {
+    width: 150px;
+    height: 25px;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: orangered;
+    border: none;
+    margin: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,80%);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a:hover {
+    background-color: rgb(240, 207, 179);
+    border-radius: 4px;
+    padding: 4px;
+
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(171, 227, 235,20%);
+    backdrop-filter: blur(20px);
+    z-index: 10000;
+}
+
+.carrusel-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.carrusel-container div img {
+    width: 700px;
+    height: 400px;
+    padding: 10px;
+    margin-top: 180px;
+    border-radius: 20px;
+}
+
+.boton-carrusel {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-carrusel button{
+    background: none;
+    font-size: 36px;
+    color: orangered;
+    border: none;
+    margin: 50px;
+}
+
+.tarjetas-blog {
+    background-color: rgb(171, 227, 235,20%);
+    backdrop-filter: blur(20px);
+    width: 230px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas-blog img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.tarjetas-blog h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(71, 121, 208);
+    margin-left: 10px;
+}
+
+.tarjetas-blog a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-blog {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetas-cv {
+    background-color: rgb(171, 227, 235,20%);
+    backdrop-filter: blur(20px);
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas-cv img {    
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.tarjetas-cv a {
+    text-decoration: none;
+    color: rgb(71, 121, 208);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.container-cv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-masvendidos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetas-publicados {
+    background-color: rgb(171, 227, 235,30%);
+    backdrop-filter: blur(30px);
+    width: 240px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas-publicados img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.tarjetas-publicados a {
+    text-decoration: none;
+    color: rgb(71, 121, 208);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.tarjetas-publicados div {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: orangered;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarjetas-publicados p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tarjetas-publicados div p:nth-child(1)::before {
+    content: "$ ";
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(24, 24, 105);
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-cuerpo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.footer-cuerpo p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.footer-cuerpo a {
+    margin: 5px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.redes-sociales a i {
+    margin: 25px;
+    font-size: 36px;
+    color: orangered;
+    text-decoration: none;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales a i:hover {
+    background-color: rgb(240, 207, 179);
+    border-radius: 4px;
+    padding: 4px;
+    transition: 1s;
+}
+
+.nav-lateral {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 200px;
+    background-color: rgb(171, 227, 235,20%);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.Categorias h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: orangered;
+    margin: none;
+}
+
+.Categorias p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    padding: none;
+}
+
+.mayor-menor button i {
+    font-size: 18px;
+    color: orangered;
+    text-decoration: none;
+    margin: 0;
+}
+
+.mayor-menor button {
+    text-decoration: none;
+    background: none;
+    border: none;
+    margin: 10px;
+}
+
+.nav-lateral h2 {
+    color: orangered;
+}
+
+.nav-lateral>button {
+    background: none;
+    border: none;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+
+.nav-lateral>button i {
+    font-size: 36px;
+    color: orangered;
+}
+
+.container-resultados {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.box {
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.publicaciones {
+    background-color: rgb(171, 227, 235,20%);
+    backdrop-filter: blur(20px);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicaciones img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.publicaciones h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: orangered;
+    margin: 10px;
+}
+
+.publicaciones a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+.publicaciones p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 12px;
+    margin: 2px;
+}
+
+.flex-interno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-publicaciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicaciones-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.publicaciones-container {
+    width: 900px;
+    margin-left: 250px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.blog {
+    background-color: rgb(171, 227, 235,20%);
+    backdrop-filter: blur(20px);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 900px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicaciones-blog {
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 30px;
+}
+
+.blog img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.publicaciones-blog a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.publicaciones-blog h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 12px;
+}
+
+.publicaciones-blog p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 12px;
+    margin: 2px;
+}
+
+main {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.seguimiento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:80px;
+}
+
+.seguimiento h2 {
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.seguimiento h3 {
+    color: rgb(71, 121, 208);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botones-envios {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(171, 227, 235,20%);
+    backdrop-filter: blur(20px);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
+
+.botones-envios i {
+    font-size: 36px;
+    color: orangered;
+    text-decoration: none;
+    margin: 0;
+}
+
+.botones-envios a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+.enviosYPreguntas {
+    display: flex;
+    justify-content: center;
+}
