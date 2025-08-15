@@ -7,7 +7,7 @@ Este repositorio contiene el maquetado de las siguientes paginas:
 3. Panel de vendedor: contiene las publicaciones hechas por los usuarios registrados como vendedores, con un panel de control de metricas
 4. Blog: contiene informacion sobre noticias en tendencia relacionada a los distintos productos ofrecidos en Pro-tienda
 5. Envios: contene una barra de busqueda para el seguimiento en todo momento del envio y yna seccion de preguntas, ayuda y sucursales
-6. 
+
 Tecnologias utilizadas:
 HTML5 para la estructura del proyecto
 CSS para los estilos, disenos y efectos visuales
