@@ -5,6 +5,8 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -404,6 +406,8 @@ nav {
 .container-navYPublicaciones {
     display: flex;
     gap: 50px;
+    margin-top: 200px;
+    margin-bottom: 20px;
 }
 
 .principal-resultados {
